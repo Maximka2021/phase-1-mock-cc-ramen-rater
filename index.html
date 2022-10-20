@@ -16,6 +16,7 @@
   <!-- Ramen Menu -->
   <div id="ramen-menu">
     <!-- Ramen Images Here -->
+    <img src="" id="ramen-image">
   </div>
 
   <!-- Ramen Details -->
@@ -47,8 +48,24 @@
     <input type="number" name="rating" id="new-rating" />
     <label for="new-comment">Comment: </label>
     <textarea name="new-comment" id="new-comment"></textarea>
-    <input type="submit" value="Create" />
+    <input type="submit" value="Create" id="btn" />
   </form>
+
+  <form id="edit-ramen">
+    <h4>Update the Featured Ramen</h4>
+    <label for="rating">Rating: </label>
+    <input type="number" name="rating" id="new-rating" />
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input type="submit" value="Update" id='edit-btn'/>
+  </form>
+
+    <input type="number" id="delete-id" placeholder="ID of element you want to delete">
+    <button id="delete-btn">Delete</button>
+
+    <input type="number" id="id-of-updated-elem" placeholder="ID of element you want to edit">
+    <input type="text" id="update-name" placeholder="New name">
+    <button id="update-btn">Update</button>
 
 </body>
 
